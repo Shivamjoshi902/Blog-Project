@@ -8,6 +8,7 @@ import Input from "./Input.jsx";
 import Select from "./Select.jsx";
 import Signup from "./Signup.jsx";
 import Login from './Login.jsx'
+import RTE from "./RTE.jsx";
 
 export {
     Header,
@@ -19,5 +20,6 @@ export {
     Input,
     Select,
     Signup,
-    Login
+    Login,
+    RTE
 }
