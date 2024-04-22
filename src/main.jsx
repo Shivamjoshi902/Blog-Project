@@ -57,7 +57,7 @@ const route = createBrowserRouter([
                   </AuthLayout>,
       },
       {
-        path: '/post/:slug',
+        path: "/post/:slug",
         element: <Posts />,
       },
     ]

@@ -1,9 +1,10 @@
 import React,{useCallback, useEffect} from 'react'
+import RTE from '../index.js'
 import { useForm } from 'react-hook-form'
 import appwritService from '../../appwrite/config.js'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { Input,Button,Select, RTE } from '../index.js'
+import { Input,Button,Select } from '../index.js'
 
 
 function PostForm({post}) {
@@ -51,7 +52,7 @@ function PostForm({post}) {
     }
 
     const slugTransform = useCallback((value) => {
-        if(value && typeof value === 'string'){
+        if(value && typeof(value) === 'String'){
             return value
             .trim()
             .toLowerCase()
