@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
 import AuthLayout from './components/AuthLayout.jsx'
@@ -59,7 +59,7 @@ const route = createBrowserRouter([
       {
         path: '/post/:slug',
         element: <Posts />,
-    },
+      },
     ]
   }
 ])
