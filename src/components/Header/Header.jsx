@@ -1,6 +1,6 @@
 import React from 'react'
-import {LogoutBtn,Container,Logo } from "../index.js" 
-import { useSelector,useDispatch } from 'react-redux'
+import {LogoutBtn,Container,Logo } from "../index" 
+import { useSelector} from 'react-redux'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
@@ -37,7 +37,7 @@ const Header = () => {
   ]
 
   return (
-    <Header className='py-3 shadow bg-gray-500'>
+    <header className='py-3 shadow bg-gray-500'>
       <Container>
         <nav className='flex'>
 
@@ -75,7 +75,7 @@ const Header = () => {
 
         </nav>
       </Container>
-    </Header>
+    </header>
   )
 }
 
